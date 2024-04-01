@@ -1,0 +1,617 @@
+@mixin buyB{
+    color:black;
+    background-color:#FEC601;
+    border-radius: 10px;
+    border-color: #f6f6f600;
+    width: 286px;
+    height: 60px;
+    
+    font-weight: bold;
+    &:hover{
+        background-color: #e6b503;
+    }
+}
+/*
+All
+*/
+*{
+    font-family: 'Roboto Flex', sans-serif;
+}
+body{
+    background: #f6f6f600;
+    margin: 0;
+    padding: 0;    
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+/*
+    HEADER
+*/
+
+header *{
+    color: #f6f6f6; 
+}
+header{
+    background: #f6f6f600;
+    background-image: url("/ttk/images/headerPhoto.png");
+    background-repeat: no-repeat;
+    min-height: 750px;
+    width: 100%;
+    margin-bottom: 252px;
+    h1{
+        margin-top: 113px;
+        font-weight: bold
+    }
+    .hspan{
+        font-size: 20px;
+    }
+    .buyB{
+        margin-top: 30px;
+        @include buyB;
+    }
+}
+/* 
+NAV LIST
+*/
+.list{
+    margin-top: 30px;
+    padding: 0;
+    li{
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        float: left;
+        margin-top: -6px;
+        a{
+            display: block;
+               font-size: 1.3rem;
+               list-style-type: none;
+               margin-right: 50px;
+               font-weight: lighter
+        }
+    }
+}
+.headerPhone{
+    margin-top: -15px;
+    float: right;
+    font-weight: bold
+}
+/* 
+ADVANTAGES
+*/
+.advantages{
+    margin-top: 132px;
+    margin-bottom: 105px;
+    h2{
+        margin-left: 41px;
+        font-size: 20px;
+        text-align: left;
+        color: #000000;
+        margin-bottom: 9px;
+    }
+    .col-lg-3{
+        margin-right: 25px;
+        background-color: #f6f6f6ca;
+        margin-top: 45px;
+        width: 390px;
+        height: 283px;
+        
+        .headerIcons{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 24px;
+            padding-left: 41px;
+            margin-bottom: 29px;
+        }
+    }
+}
+.info-adv{
+    font-size: 20px;
+    margin-left: 41px;
+    display: flex;
+    text-align: left;
+    color: #494949;
+    font-weight: lighter
+}
+
+/*
+MAIN TABS
+*/
+
+.main__tabs{
+    margin-bottom: 100px;
+
+    .nav{
+        display: flex;
+        flex: wrap;
+        padding-left: 0;
+        margin-bottom: 100px;
+        list-style: none;
+        
+        .nav-link{
+            border: none;
+            border-bottom:1px solid #C8C8C8;
+            font-weight: 400;
+            font-size: 20px;
+            text-transform: uppercase;
+            color: rgba(0, 0, 0, 0.61);
+            display: flex;
+            width: 100%;
+            justify-content: center
+            
+        }
+    }
+}
+.main__tabs .nav-link.active{
+    font-weight:600 ;
+    border-bottom: 1px solid #FEC601;
+    color: #000000;
+    &:hover{
+        color: (0, 0, 0, 0.61);
+    }
+}
+/*
+Pannels
+*/
+
+/*
+RAISE
+*/
+.schedule-panel{
+    h3{
+        color: #000;
+        font-size: 36px;
+        font-weight: bold;
+    }
+    .march{
+        font-size: 18px;
+        color: #515050;
+        margin-bottom: 70px;
+    }
+    .dropdown {
+        button{
+        background-color: #f6f6f6;
+        color: #515050;
+        width: 350px;
+        min-height: 35px;
+        text-align: left;
+        margin-left: 80px;
+        margin-right: 50px;
+        white-space: inherit;
+    }
+    .dropdown-toggle::after{
+        float: right;
+        margin-top: 3%;
+    }
+    ul{
+        margin-left: 80px;
+        button{
+            // border: 1px solid;
+            // border-color: #000;
+            margin: 0px;
+            width: 450px;
+            &:hover{
+                background-color: rgb(171, 168, 168);
+            }
+        }
+        border: none;
+        li{
+            border: 1px solid;
+            border-color: #bdbdbda0;
+            // width: 0;
+            
+        }
+    }
+    }
+    .price-row{
+        margin-bottom: 70px;
+        .price{
+            font-size: 18px;
+            color: #515050;
+            margin-bottom: 70px;
+        }
+        .btnPrice{
+            background-color: #fec701b5;
+            color:#000;
+            min-height: 35px;
+            width: 100px;
+            font-size: 18px;
+            border-radius: 8px;
+            border:none;
+            margin-left: 60px;
+        }
+    }
+    .quest{
+        color: #141B57;
+        font-weight: bold;
+        margin-bottom: 40px;
+    }
+    .raise-but{
+        .order{
+        color:black;
+    background-color:#FEC601;
+    border-radius: 10px;
+    border-color: #f6f6f600;
+    width: 270px;
+    height: 60px;
+    
+    font-weight: bold;
+    &:hover{
+        background-color: #e6b503;
+    }
+    }
+    .calls{
+        margin-top: 5px;
+        margin-left: 22px;
+    }
+}
+.raise{
+    .row-head{
+        display: flex;
+        justify-content: space-between;
+    }
+    .every-day{
+        display: flex;
+        img{
+            width: 16px;
+            height: 16px;
+            margin-top: 6px;
+        }
+        .time-every{
+            padding-right: 34px;
+            padding-left: 15px;
+            font-size: 20px;
+            font-weight:500;
+            color: #000;
+        }
+    }
+    .col-12{
+        background-image: url('/ttk/images/backraise.png');
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        padding: 34px;
+        padding-bottom: 34px;
+        min-width: 1240px;
+        min-height: 426px;
+        margin-bottom: 34px;
+        
+        .col-auto{ 
+            padding-right: 8px;
+            display: flex;
+            justify-content: center;
+            p{
+            padding-top: 6px;
+            text-align: center;
+            border: 2px solid;
+            border-color: #000;
+            border-radius: 6px;
+            width: 88px;
+            min-height: 40px;
+        }
+    }
+        .time-h{
+            font-size: 20px;
+            font-weight: 500;
+            color: #000;
+        }
+        .row-name{
+            display: flex;
+            img{
+                margin-right: 14px;
+            }
+            .time-name{
+                font-size: 18px;
+                color: #000;
+            }
+        }
+    }
+    img{
+        width: 16px;
+        height: 19px;
+    }
+    .time-under{
+        font-size: 18px;
+        color: #1E1E1E;
+    }
+
+}
+}
+
+/* 
+ORDER TICKET
+*/
+
+.order_ticket{
+    h3{
+        color: #000;
+        font-size: 36px;
+        font-weight: bold;
+        
+    }
+    .col-lg-3{
+        margin-right: 25px;
+        text-align: center;
+        margin-top: 50px;
+        background-color: white;
+        width: 390px;
+        height: 190px;
+        box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
+    }
+    .variables-name{
+            margin-top: -50px;
+            margin-bottom: 50px;
+            margin-left: 140px;
+            width: 83px;
+            height: 83px;
+            background-color: #FEC601;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%; 
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+            box-shadow: 0 5px 4px rgb(0, 0, 0);
+            overflow: hidden;
+    }
+    .info-var{
+    text-align: center;
+    }
+    .ticket-buy{ 
+        .col-6{
+            margin-top: 60px;
+            text-align: center;
+            height: 288px;
+            width: 604px;
+            margin-right: 30px;
+            background-color: #FEC601;
+            .adress{
+                margin-top: 50px;
+               text-align: center;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+                font-size: 20px;
+                color: #000000;
+                font-weight: 500;
+            }
+            .price{
+                color: #494949;
+                font-size: 20px;
+            }
+            .btn{
+                margin-top: 25px;
+                background-color: #f6f6f6;
+                width: 286px;
+                height: 60px;
+                margin-left: 162px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
+
+/*
+ORDER BUS
+*/
+
+.panels{
+    h3{
+        float: left;
+        color: #000;
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    } 
+    .hText{
+        font-size: 18px;
+    }
+    .moduleBus{
+    font-weight: bold;
+    color: #515050;
+    font-size: 18px;
+    }
+    .vector{
+        margin-right: 20px;
+    }
+    .d-flex{
+        font-size: 18px;
+        color: #515050;
+        margin-bottom: 50px;
+    }
+    .but{
+        color: #7E7A7A;
+        height: 60px;
+        margin-bottom: 59px;
+        .order-bus{
+            @include buyB;
+    }
+    .calls{
+        margin-left: 21px;
+    }
+    }
+    .questions{
+        color: #515050;
+        font-size: 18px;
+    }
+    .sin{
+        font-weight: bold;
+        color: #141B57;
+    }
+    .carousel{
+        .slider{
+            height: 620px;
+            width: 684px;
+        }
+        }
+        .backI{
+            border-radius: 50%; 
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+            margin-left: -100px;
+            box-shadow: 0 3px 20px rgba(0, 0, 0, 0.75);
+    }
+    .forwardI{
+        border-radius: 50%; 
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        margin-right: -100px;
+        box-shadow: 0 3px 20px rgba(0, 0, 0, 0.75);
+}
+}
+/*
+BANNER
+*/
+.bannerBus{
+    .container-fluid{
+        width: 100%;
+        height: 513px;
+        background-image: url("/ttk/images/banner.jpg");
+        .buyB{
+            margin-top: 30px;
+            @include buyB;
+        }
+    }
+    p{
+        margin-top: 140px;
+        color:#f6f6f6;
+        font-size: 36px;
+        font-weight: bold;
+    }
+    .d-none{
+        display: block!important;
+        img{
+            position: absolute;
+            right: 0;
+            margin-top: -360px;
+            margin-right: 80px;
+            width: 769px;
+            height: 513px;
+    }
+    }
+}
+
+/*
+Footer
+*/
+
+.footer{
+    flex: 0 0 auto;
+	width: 100%;
+    height: 214px;
+    background-color: #141B57;
+    color:#f6f6f6;
+    .row{
+        padding-top: 38px;
+        .p{
+            margin-bottom: 7px;
+        }
+    }
+    .copywrite{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+}
+.footerA{
+    float: right;
+    padding-right: 71px;
+}
+
+.dropdown-menu{
+    display: none;
+}
+.menu-active{
+    display: block;
+}
+.error{
+    border-color: red;
+    color: red;
+}
+
+.mail-errors{
+    color: red;
+     margin-bottom: 10px;
+}
+
+.modal-dialog{
+    max-width: 722px;
+    max-height: 592px;
+    .modal-content{
+        border-radius: 20px;
+    }
+    .header-form{
+        .btn-close{
+            float: right;
+            margin-top: 10px;
+            margin-right: 10px;
+            
+            --bs-btn-close-focus-shadow: #000
+        }
+        .modal-title{
+            padding-top: 43px;
+            margin-bottom: 10px;
+            font-weight: 600;
+            font-size: 36px;
+            color: #000
+        }
+        .modal-text{
+                color: #515050;
+                font-size: 18px;
+        }
+    } 
+    .modal-body{
+        display: flex;
+        justify-content: center;
+        min-width: 500px
+    }
+    .POST{
+        label{
+            font-size: 16px;
+            font-weight: 400;
+            margin-bottom: 6px;
+            color: #000;
+        }
+        input{
+            padding: 11px 14px;
+            margin-bottom: 10px;
+            // border-color: #000;
+            &:focus{
+                border-color: #000;
+                box-shadow:0 0 0 0.25rem rgba(0, 0, 0, 0);
+            }
+        }
+        div{
+            margin-bottom: 10px;
+        }
+        .agree{
+            margin-top: 15px;
+            font-weight: lighter;
+            font-size: 14px;
+        }
+        a{
+            margin-top: 15px;
+            color: #141B57;
+            border-bottom: 1px solid #141B57;
+            font-size: 14px;
+        }
+    }
+    #submit-close{
+        color:black;
+    background-color:#FEC601;
+    border-radius: 10px;
+    border-color: #f6f6f600;
+    height: 60px;
+    font-weight: bold;
+    margin-top: 26px;
+        margin-bottom: 43px;
+    &:hover{
+        background-color: #e6b503;
+    }
+}
+}
